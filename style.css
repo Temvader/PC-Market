@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color: #323232;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.yo{
+    height: 3em;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1.5em;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.h-syl{
+    font-weight: 100;
+    font-size: small;
+}
+.paket{
+    height: 35px;
+}
+
+.menu{
+    display: none;
+}
+
+
+/* GLAVNAYA */
+
+.D{
+    height: 100vh;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    line-height: 3.8em;
+}
+.pc-yo{
+    height: 45em;
+}
+.text-l{
+    font-size: 100px;
+    padding-bottom: 0.5em;
+}
+.lev{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #801BE9;
+    border-color: transparent;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* CATALOG */
+.catalog{
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.txt-cat{
+    text-align: center;
+}
+.kart-cat{
+    padding: 2em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cart{
+    background-color: #111111;
+    border-radius: 20px;
+    padding: 1em;
+}
+.pc{
+    height: 400px;
+}
+
+.logo-pri{
+    color: white;
+    padding: 0.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy{
+    width: 180px;
+    height: 50px;
+    border-radius: 11px;
+    color: white;
+    background-color: #801BE9;
+    border-color: transparent;
+}
+.logo-pri2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+    line-height: 1em;
+}
+.p-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* POCHEMU MY? */
+.repair{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.pochemu{
+    padding: 3em;
+    height: 120vh;
+}
+
+.poch{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.argumenty{
+    text-align: center;
+    color: white;
+}
+.variki{
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.sec1{
+    padding-bottom: 0.8em;
+}
+.pochemu-a{
+    color: rgb(175, 175, 175);
+}
+
+
+@media (max-width: 800px){
+
+
+    .h-syl, .paket{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .yo{
+        background-color:  #111111;
+        padding: 1em;
+    }
+    .D{
+        padding: 1em;
+        height: 70vh;
+    }
+    .h-btn{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border-color: transparent;
+        background-color: #801BE9;
+        color: white;
+    }
+
+    .text-l{
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    .pc-yo{
+        height: 340px;
+        display: flex;
+    }
+    .levo, .pravo{
+        margin-top: -10em;
+    }
+    .lev{
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+    }
+    .catalog{
+        margin-top: -8em;
+        height: 160vh;
+    }
+    .kart-cat{
+        flex-direction: column;
+        height: 400px;
+        font-size: .6em;
+        gap: 25px;
+        width: unset;
+    }
+    .pc{
+        height: 300px;
+    }
+    .buy{
+        width: 100px;
+        height: 40px;
+        font-size: 1.8em;
+    }
+    .cart{
+        width: 100%;
+    }
+
+    .pochemu{
+        margin-top: -2em;
+        padding: 1em;
+    }
+
+    .repair{
+        height: 160px;
+    }
+    .variki{
+        font-size: .8em;
+        text-align: center;
+        flex-direction: column;
+        gap: 4em;
+    }
+    .a-logo{
+        height: 50px;
+    }
+}
